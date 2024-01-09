@@ -38,7 +38,7 @@
               </div>
               <div class="mt-5">
                 <span>
-                  Already have an account ? <a href="login.html" class="text-purple-500 font-semibold">LogIn</a>
+                  Already have an account ? <a href="<?php echo URLROOT; ?>/users/login" class="text-purple-500 font-semibold">LogIn</a>
                 </span>
               </div>
               <div class="mt-5">

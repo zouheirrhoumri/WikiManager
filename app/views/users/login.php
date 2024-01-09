@@ -33,7 +33,7 @@
               </div>
               <div class="mt-5">
                 <span>
-                  Don't have an account ? <a href="register.html" class="text-blue-500 font-semibold">Register</a>
+                  Don't have an account ? <a href="<?php echo URLROOT; ?>/users/register" class="text-blue-500 font-semibold">Register</a>
                 </span>
               </div>
               <div class="mt-5">
