@@ -8,8 +8,8 @@
   // App Root
   define('APPROOT', dirname(dirname(__FILE__)));
   // URL Root
-  define('URLROOT', 'http://localhost/WikiArcticle');
+  define('URLROOT', 'http://localhost/WikiManager');
   // Site Name
-  define('SITENAME', 'WikiArcticle');
+  define('SITENAME', 'WikiManager');
   // App Version
   define('APPVERSION', '1.0.0');
