@@ -21,11 +21,14 @@ class Categorie
 
         return  $this->db->single();
     }
-    
-    public function getcategotrybyid(){
-        $this->db->query("SELECT * From wikimanager.categories ");
+
+    public function getcategotrybyid()
+    {
+        $this->db->query("SELECT * From categories ");
         return $this->db->resultSet();
     }
 
-    
+    public function f()
+    {
+    }
 }
