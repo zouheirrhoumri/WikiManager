@@ -8,7 +8,6 @@
     <title>SignUp</title>
   </head>
   <body>
-    <?php flash('register_success'); ?>
     <div class="min-h-screen py-20" style="background-image: linear-gradient(115deg, #143374, #6cb8f7)">
       <div class="container mx-auto">
         <div class="flex flex-col lg:flex-row w-12/12 lg:w-8/12 bg-white rounded-xl mx-auto shadow-lg overflow-hidden">
@@ -23,7 +22,7 @@
             </p>
             <form action="<?php echo URLROOT; ?>/users/login" method="post">
             
-              <div class="mt-5">
+              <div class="mt-5" id="password">
                 <input type="text" name="email" placeholder="Email" class="border border-gray-400 py-1 px-2 w-full <?php echo (!empty($data['email_err'])) ? 'is-invalid' : ''; ?>" value="<?php echo $data['email']; ?>">
                 <span class="invalid-feedback text-red-500"><?php echo $data['email_err']; ?></span>
               </div>
@@ -44,5 +43,6 @@
         </div>
       </div>
     </div>
+
   </body>
 </html>

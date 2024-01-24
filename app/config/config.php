@@ -3,13 +3,12 @@
   define('DB_HOST', 'localhost');
   define('DB_USER', 'root');
   define('DB_PASS', '');
-  define('DB_NAME', 'wikimanager');
+  define('DB_NAME', 'wiki');
+
 
   // App Root
   define('APPROOT', dirname(dirname(__FILE__)));
   // URL Root
-  define('URLROOT', 'http://localhost/WikiManager');
+  define('URLROOT', 'http://localhost/Wikis-sites');
   // Site Name
-  define('SITENAME', 'WikiManager');
-  // App Version
-  define('APPVERSION', '1.0.0');
+  define('SITENAME', 'wiki');

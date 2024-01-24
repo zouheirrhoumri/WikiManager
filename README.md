@@ -1,1 +1,1 @@
-# WikiManager
+# wikis-sites

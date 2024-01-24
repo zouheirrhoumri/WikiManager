@@ -13,12 +13,9 @@ class Tag
     return  $this->db->resultSet();
   }
   public function add_wiki_tags($id,$tags){
-    // var_dump($tags);
-    // var_dump($id);
-    // die();
+
     foreach ($tags as $tag) {
      
-      // Assuming your table is named "tags" with columns "tag_id" and "name"
       $this->db->query( "INSERT INTO wiki_tags (wiki_id,tag_id) VALUES (:wiki_id,:tag_id)");
       $this->db->bind(':wiki_id',$id);
       $this->db->bind(':tag_id',$tag);
@@ -65,14 +62,11 @@ public function updateTag($data){
   
   try{
     $this->db->query('UPDATE  tags SET name =:tag_name  WHERE tag_id=:tag_id');
-    // var_dump($data);
-    // die();
-    //Bind value
+   
     $this->db->bind(':tag_id',$data['tag_id']);
     $this->db->bind(':tag_name',$data['tag_name']);
   
   
-    //Execute
     return $this->db->execute();
   }catch(PDOException $e){
     echo $e->getMessage();
